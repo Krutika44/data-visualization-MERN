@@ -21,7 +21,7 @@ const BarChart = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/insights');
+        const response = await axios.get('https://data-visualization-mern.onrender.com');
         console.log('Fetched data:', response.data);
 
         const data = response.data;
